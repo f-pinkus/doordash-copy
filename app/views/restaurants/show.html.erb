@@ -8,3 +8,6 @@
 
   <%= button_to "Destroy this restaurant", @restaurant, method: :delete %>
 </div>
+
+<%= link_to "Make an Order", new_order_path(restaurant_id: @restaurant.id), class: "button" %>
+

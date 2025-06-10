@@ -6,7 +6,7 @@
 
   <p>
     <strong>Restaurant:</strong>
-    <%= order.restaurant_id %>
+    <%= order.restaurant&.name  || "N/A" %>
   </p>
 
   <p>
